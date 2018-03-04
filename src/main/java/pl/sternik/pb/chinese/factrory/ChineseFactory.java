@@ -1,6 +1,7 @@
 package pl.sternik.pb.chinese.factrory;
 
 import pl.sternik.pb.Thing;
+import pl.sternik.pb.fso.car.*;
 
 class RaceCar extends Toy {
     public RaceCar() {
@@ -49,7 +50,7 @@ public class ChineseFactory {
             System.out.println(factory.produceNextItem());
         
         System.out.println("-----------------------");
-/*
+
         long start = System.nanoTime();
         CarBuilder kabrioBuilder = new KabrioBuilder();
         CarBuildDirector carBuildDirector = new CarBuildDirector(kabrioBuilder);
@@ -72,6 +73,5 @@ public class ChineseFactory {
         for (int i = 0; i < produkcja.length; i++) {
             System.out.println(produkcja[i]);
         }
-*/
     }
 }
